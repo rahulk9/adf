@@ -1,0 +1,33 @@
+{
+	"name": "Destination_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "teststorageaccount1399_LS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"file_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@concat(dataset().file_name,'.csv')",
+					"type": "Expression"
+				},
+				"folderPath": "ADV_Dump1",
+				"container": "blob1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
