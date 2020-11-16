@@ -90,7 +90,8 @@
 				"defaultValue": "Product"
 			},
 			"StandardCost": {
-				"type": "float"
+				"type": "float",
+				"defaultValue": 1000
 			}
 		},
 		"annotations": [],
