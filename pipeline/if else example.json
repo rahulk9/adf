@@ -98,11 +98,7 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [
-								{
-									"name": "filename"
-								}
-							],
+							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "Meta_BinaryDS",
