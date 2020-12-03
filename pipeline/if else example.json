@@ -83,6 +83,16 @@
 				}
 			}
 		],
+		"parameters": {
+			"metadatafilename_true": {
+				"type": "string",
+				"defaultValue": "DimensionIndex.csv"
+			},
+			"metadatafilename_false": {
+				"type": "string",
+				"defaultValue": "MeasureIndex.csv"
+			}
+		},
 		"annotations": []
 	}
 }
