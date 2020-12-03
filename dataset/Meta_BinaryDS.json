@@ -1,0 +1,27 @@
+{
+	"name": "Meta_BinaryDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "teststorageaccount1399_LS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"file_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().file_name",
+					"type": "Expression"
+				},
+				"folderPath": "Folder1",
+				"container": "blob1"
+			}
+		}
+	}
+}
