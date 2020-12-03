@@ -106,7 +106,13 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "Meta_BinaryDS",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"file_name": {
+											"value": "@pipeline().parameters.metadatafilename_true",
+											"type": "Expression"
+										}
+									}
 								},
 								"fieldList": [],
 								"storeSettings": {
