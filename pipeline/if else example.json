@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@equals(activity('Lookup1').output.firstRow.Prop_0,'texas')",
+						"value": "@equals(activity('Lookup1').output.firstRow.Prop_0,'texas1')",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
